@@ -1129,3 +1129,94 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* User Profile Styles */
+#user-profile {
+    position: relative;
+}
+
+.user-profile-container {
+    position: relative;
+}
+
+.user-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(240, 147, 251, 0.2);
+    color: var(--light);
+    border: 2px solid var(--accent);
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.user-btn:hover {
+    background: rgba(240, 147, 251, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(240, 147, 251, 0.4);
+}
+
+.user-avatar {
+    font-size: 1.3em;
+}
+
+.user-name {
+    display: inline-block;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.98), rgba(15, 76, 117, 0.98));
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(240, 147, 251, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+    animation: slideDown 0.3s ease;
+}
+
+.dropdown-user {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.dropdown-user strong {
+    color: #f093fb;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--gradient-2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(245, 87, 108, 0.4);
+}

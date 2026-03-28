@@ -90,6 +90,7 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 <script>
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -106,6 +107,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         alert('Password must be at least 6 characters');
         return;
     }
+
+    // Save username to localStorage
+    localStorage.setItem('loggedInUser', username);
 
     const loginMessage = document.getElementById('loginMessage');
     loginMessage.textContent = '✓ Login successful! Redirecting...';
